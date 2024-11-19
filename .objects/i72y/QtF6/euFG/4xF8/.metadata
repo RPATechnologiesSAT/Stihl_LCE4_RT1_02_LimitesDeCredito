@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Decisión de",
+  "Type": "Element",
+  "Id": "4xF8W-YVmUOt3OIGH8QoXg",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/4xF8W-YVmUOt3OIGH8QoXg",
+  "ParentRef": "TmPdEOoPdEO_2-PlKrUvcg/euFGWtb6f0iVsotgHutZLw",
+  "Created": "2024-11-14T11:31:32.3441271Z",
+  "Updated": "2024-11-14T11:31:32.3441271Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

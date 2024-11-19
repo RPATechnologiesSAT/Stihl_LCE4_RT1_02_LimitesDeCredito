@@ -1,0 +1,12 @@
+﻿{
+  "Name": "P10 (1) 200 SAP Credit Management",
+  "Type": "App",
+  "Id": "i72ygGev30CMLjdbEYu9Ig",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/i72ygGev30CMLjdbEYu9Ig",
+  "Created": "2024-11-14T11:31:31.5119872Z",
+  "Updated": "2024-11-14T11:31:31.5119872Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

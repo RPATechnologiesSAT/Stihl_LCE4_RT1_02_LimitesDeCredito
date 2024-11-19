@@ -1,0 +1,41 @@
+﻿{"Settings": [
+	   {
+		    "_Importante" : "'OrchestratorFolder' será usada como discriminador para recoger los Assets y credenciales. Si no existe en 'Settings', ni los assets ni las credentials se tendrán en cuenta ",
+            "Name": "OrchestratorFolder",
+            "Value": "Shared",
+            "Description": "Carpeta Orquestador" 
+        },
+	    {
+            "Name": "OrchestratorQueueName",
+            "Value": "QueueTest",
+            "Description": "Cola de ejecución de la que se recogerán los items que van a ser tratados."
+        },
+        {
+            "Name": "ExScreenshotsFolderPath",
+            "Value": "Exceptions_Screenshots",
+            "Description": "Carpeta para el almacenamiento de capturas de pantalla de error"
+        },
+        {
+            "Name": "DebugMode",
+            "Value": "True",
+            "Description": "Booleano en tipo string para realizar o evitar ciertas acciones segun el modo de ejecución. Por defecto, en true, no se ejecutará el cleaning Desktop."
+        },
+		{
+			"Name":"URLSharePoint",
+			"Value":"https://stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FIBERICAN%5FFCI%2FShared%20Documents%2F1%2E%20Clientes%2F2%2E%20L%C3%ADmites%20de%20Cr%C3%A9dito&viewid=02b47bd7%2D28c3%2D4641%2D8a34%2D91fc6d216305",
+			"Description":"Ruta SharePoint"
+		},
+		{
+			"Name":"TransaccionSAPBC",
+			"Value":"UKM_CASE",
+			"Desctiption":"Transaccion acceder "
+		},
+		{
+			"Name":"SAP_Tenant",
+			"Value":"P10-200 : ONE STIHL - Production ERP",
+			"Desctiption":"Tenant SAP "
+		}
+    ]
+ 
+
+}

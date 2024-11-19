@@ -1,0 +1,13 @@
+﻿{
+  "Name": "P10 (1) 200 SAP Credit Management",
+  "Type": "Screen",
+  "Id": "euFGWtb6f0iVsotgHutZLw",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/euFGWtb6f0iVsotgHutZLw",
+  "ParentRef": "TmPdEOoPdEO_2-PlKrUvcg/QtF6ebyFu0qjyODHLzUdew",
+  "Created": "2024-11-14T11:31:31.6265822Z",
+  "Updated": "2024-11-14T11:31:31.6265822Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
