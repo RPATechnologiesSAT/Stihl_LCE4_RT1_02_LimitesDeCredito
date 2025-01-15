@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Generated" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_country" Type="InArgument(x:String)" />
+    <x:Property Name="out_FilePath" Type="InArgument(x:String)" />
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <this:Generated.in_country>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Generated.in_country>
+  <this:Generated.out_FilePath>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Generated.out_FilePath>
+  <this:Generated.in_Config>
+    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" />
+  </this:Generated.in_Config>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Generated">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="cont" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_ClientesIncidencias" />
+      <Variable x:TypeArguments="ui:UiElement" Name="window" />
+      <Variable x:TypeArguments="x:Int32" Name="contDT" />
+      <Variable x:TypeArguments="x:String" Name="textToCopy" />
+      <Variable x:TypeArguments="x:Object" Name="WSSessionData" />
+    </Sequence.Variables>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="P10 (1) 200 SAP Credit Management" sap:VirtualizedContainerService.HintSize="1086.4,4296" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="1696764a-cc40-4b9b-a862-0f592982b5e1" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Decisión de'" sap:VirtualizedContainerService.HintSize="985.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1696764a-cc40-4b9b-a862-0f592982b5e1" Version="V3">
+            <uix:NClick.Target>
+              <uix:TargetAnchorable ContentHash="CxqEFK8qk0ayr9j0Otu4BQ" DesignTimeRectangle="26, 460, 524, 34" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;wnd ctrlname='SapguiWrapper' /&gt;&lt;wnd ctrlname='SapguiWrapper' /&gt;&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(1)/200 SAP Credit Management' /&gt;&lt;sap id='shellcont/shell/shellcont[0]/shell/shellcont[1]/shell/shellcont[1]/shell' relpath='SAP Credit Management: Caso crédito/Casos' /&gt;" Guid="7f630dea-f78c-427f-94bb-79656956bc22" InformativeScreenshot="2f4930e8002495bc7d662b7e24afec7a.png" Reference="TmPdEOoPdEO_2-PlKrUvcg/4xF8W-YVmUOt3OIGH8QoXg" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (1) 200 SAP Credit Management' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+            </uix:NClick.Target>
+          </uix:NClick>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="fTjNnSDCSUCl-dY3t14oqQ" FilePath="C:\Program Files\SAP\NWBC800\nwbc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARMSURBVFhHzZf7b5NVHMb3X3nBC/EWY0z8BaMQlR/8RRPRHyS4IWAIRKcONeAERnTZwpDRwTbGuuHajc2Cy7pR6NZt0Bu93+/XXcjjeY5760tdS1kHs8mTNu/lfJ7z/T7nvH0b+Imm8ruTueVMKr+CRHbpsYoMssiU8JT4kV26L0+sd8PjEFmSSRPxTDH/JOGKyCS7YSvgishuWO/Ek9T/10A6vyyVFL+zhRXkiqtM77rX1qP/GCA0v7SKOVcMi94EDnXdwIGzNzA47UQgkRd921wTJQMcmGCrP4lveoxSrdrbeO6Lbqln9p3H3vYJJrdiJTgGK8Vx+J0RleOxapWTBlhmgk8Nm7Hr2BA+PqnHnxY/3jzSL8HPN13AC0JP7f0dPw/ekgPzvpQYOFtcQUEACbIHU9CbPbj0lw1XTS5M28KwBVIIisrRhGKOLS0ZIDycLGB8zouJOZ+8gSdiYqZGawjHB0z4SBj65PQYPjtzDY0dBrgjGTHIqvw2zPtxengWn7aN4a2j/dIoK0bTLx/sEZPow84WrZjUKJo6r6Olbwa6W24kxPjSgOKEs6IzdY95rLh8X5pq11nQObog1aG3wDhnx56TI9jWuAYU39u/1OClAz0lbRd6cb9GVpHXvP+DFm1DJpjtfgRjaYjtuPIqUMRQsj2vfXWpNBBb0fSrDt06o4D+A1KDKYK3NXbjjcO92N8xgWGjFe5AFJG4aEk0hUA0jVA883ADFCvx+W8TckA14PzINI50jcsq8BiNKHnZ+f0VnOg3wjjvgj8URSAchzcUhy+cEPCUhEeSudoMMDhd44ty9moDbzdfxuiUBe9+N4Cn93XjlYMXseeUDhfGzFh0+OAPRuAJROTMPcFYCc7yhxPZ2lpAZcSezX3h1UMXZckVE5z54bPjGLg+i6PnDNAb78Dh8sPjC+KeV8gXhssvTKzB/ZHkA/BYulCbASojsvC1ZgrPllWBs1+0u+By++B0+WAXBpweGghVhLP0hHPcmg1wzYeSeblHKFmggV2i1zfnHbA6vRLucAcegLPvClzpuwKnajZAMYx3fUns+PaKDBoNvHdMi6HJBVhsHjjX4Cw9+67A1aFj6bmbKmM+kgGKu5lhwS+XJRP/gVjb5/S3YbTcg0sFV4eOcKXvajj1yAYorgqNwSpXxe4fh3BGO4OrU3fhFYlX97088erSK9qQAYrPgJbeGbwjMtB62YhOnVms9dhDQ1euDRtgKCOpAloHTfipdwrNmkmEoomKoSsvvaING6BoIpNfQpvWJB5WerHFJsTsq4euXHUZoPgobtfNYkfzAFyBmNznq4WuXHUbyAkDfZM2uQ2bHUFEEv/CK/VdrboN8GnJv26vi2X5x00nEul81dCVq24DFLPw4YkR/CL+LaVzxaqhK9emvJhwh7w26xV7wx2kssWa4fLFRFy8Ka9mNJEU8Fi6djjZW/9yyo9I7Ba9njc0/A2ubZVs280dJwAAAABJRU5ErkJggg==" InformativeScreenshot="cf3a91a68dad73f44a549c84c02afbd6.png" Reference="TmPdEOoPdEO_2-PlKrUvcg/euFGWtb6f0iVsotgHutZLw" Selector="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (1) 200 SAP Credit Management' /&gt;" Title="P10/200 Índice" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <DynamicActivity Name="{x:Null}" />
+  </Sequence>
+</Activity>

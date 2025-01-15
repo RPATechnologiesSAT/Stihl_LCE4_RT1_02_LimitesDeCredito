@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Decisión de crédito doc…",
+  "Type": "Element",
+  "Id": "8iVpn0Ar2UuOe11mjZ1c9w",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/8iVpn0Ar2UuOe11mjZ1c9w",
+  "ParentRef": "TmPdEOoPdEO_2-PlKrUvcg/euFGWtb6f0iVsotgHutZLw",
+  "Created": "2024-11-26T13:00:09.9252229Z",
+  "Updated": "2024-11-26T13:00:09.9252229Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

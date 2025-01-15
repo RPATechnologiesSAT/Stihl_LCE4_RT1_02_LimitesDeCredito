@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="J4VaC0lGd0Kj6_rJOjoi6Q" Reference="TmPdEOoPdEO_2-PlKrUvcg/8iVpn0Ar2UuOe11mjZ1c9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="25, 491, 524, 43" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;wnd ctrlname='SapguiWrapper' /&gt;&lt;wnd ctrlname='SapguiWrapper' /&gt;&lt;wnd cls='SAP_FRONTEND_EMBEDDED' title='P10(1)/200 SAP Credit Management' /&gt;&lt;sap id='shellcont/shell/shellcont[0]/shell/shellcont[1]/shell/shellcont[1]/shell' relpath='SAP Credit Management: Caso crédito/Casos/Decisión de crédito documentada - Búsqueda' /&gt;" Guid="c194a16d-f021-4919-9a6b-30c96f88f13e" ScopeSelectorArgument="&lt;wnd app='nwbc.exe' cls='HwndWrapper*' title='P10 (1) 200 SAP Credit Management' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8385f8bea19f8a8fcdf79a004eff1455.png" xmlns="">036r9mhGHdUKZnRXeatGE7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

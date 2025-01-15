@@ -1,0 +1,13 @@
+﻿{
+  "Name": "P10(1)200 Export As",
+  "Type": "Screen",
+  "Id": "vF_VTY59fkayetcD7azaAg",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/vF_VTY59fkayetcD7azaAg",
+  "ParentRef": "TmPdEOoPdEO_2-PlKrUvcg/lBseRvcymkWDvKMIBZPjTQ",
+  "Created": "2024-12-18T15:07:07.7526977Z",
+  "Updated": "2024-12-18T15:07:07.7526977Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
