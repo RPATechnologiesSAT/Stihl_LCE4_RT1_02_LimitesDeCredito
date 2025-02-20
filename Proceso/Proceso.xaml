@@ -117,14 +117,14 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Proceso" sap:VirtualizedContainerService.HintSize="1108,1402" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Proceso" sap:VirtualizedContainerService.HintSize="1111,1516" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Proceso" sap:VirtualizedContainerService.HintSize="522,1379" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+    <TryCatch DisplayName="Proceso" sap:VirtualizedContainerService.HintSize="574,1493" sap2010:WorkflowViewState.IdRef="TryCatch_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -132,19 +132,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Etapas del Proceso" sap:VirtualizedContainerService.HintSize="484,1106" sap2010:WorkflowViewState.IdRef="Sequence_40">
+        <Sequence DisplayName="Etapas del Proceso" sap:VirtualizedContainerService.HintSize="536,1220" sap2010:WorkflowViewState.IdRef="Sequence_40">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_dtCountry]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,1046" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_dtCountry]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="502,1160" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,859" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,973" sap2010:WorkflowViewState.IdRef="Sequence_41">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Name="dt_ExcepcionesLC" />
                     <Variable x:TypeArguments="x:String" Name="FilePath" />
@@ -155,16 +155,24 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="382,165" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="NWBC.exe" />
-                  <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="382,112" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[Environment.CurrentDirectory + &quot;\Data\TempExcelExport&quot;+&quot;\&quot;+System.Text.RegularExpressions.Regex.Match(CurrentRow(&quot;Layout&quot;).ToString, &quot;[A-Z]{2}&quot;).Value + &quot;-&quot; + &quot;UKM_CASE.xlsx&quot;]" />
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Proceso\ModulosProceso\TransaccionUKM_CASE.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\TransaccionUKM_CASE.xaml">
+                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="NWBC.exe" />
+                  <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[Environment.CurrentDirectory + &quot;\Data\TempExcelExport&quot;+&quot;\&quot;+System.Text.RegularExpressions.Regex.Match(CurrentRow(&quot;Layout&quot;).ToString, &quot;[A-Z]{2}&quot;).Value + &quot;-&quot; + &quot;UKM_CASE.xlsx&quot;]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[in_VZFilePath]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[If(CurrentRow("Pais").ToString.Contains("Es"),Environment.CurrentDirectory + ("\Data\Informe VZ ES.xlsx"),Environment.CurrentDirectory + ("\Data\Informe VZ PT.xlsx"))]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Proceso\ModulosProceso\TransaccionUKM_CASE.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\TransaccionUKM_CASE.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_country">[CurrentRow("Layout").ToString]</InArgument>
                       <OutArgument x:TypeArguments="x:String" x:Key="out_FilePath">[FilePath]</OutArgument>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InserccionDatos - Invoke Workflow File (Proceso\ModulosProceso\InserccionDatos.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\InserccionDatos.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InserccionDatos - Invoke Workflow File (Proceso\ModulosProceso\InserccionDatos.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\InserccionDatos.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">[FilePath]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_CodPais">[System.Text.RegularExpressions.Regex.Match(CurrentRow("Layout").ToString, "[A-Z]{2}").Value]</InArgument>
@@ -172,10 +180,11 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="out_VZFilePath">[VZ_FilePath]</OutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmail - Invoke Workflow File (Proceso\ModulosProceso\SendEmail.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\SendEmail.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmail - Invoke Workflow File (Proceso\ModulosProceso\SendEmail.xaml)" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Proceso\ModulosProceso\SendEmail.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_CodPais">[System.Text.RegularExpressions.Regex.Match(CurrentRow("Layout").ToString, "[A-Z]{2}").Value]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_VZFilePath">[VZ_FilePath]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_Informe">[in_VZFilePath]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                 </Sequence>
@@ -185,7 +194,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="488,22" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="540,22" sap2010:WorkflowViewState.IdRef="Catch`1_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -196,7 +205,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Handle System Exception" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_24">
+            <Sequence DisplayName="Handle System Exception" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Sequence_24">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -233,7 +242,7 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="488,22" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="540,22" sap2010:WorkflowViewState.IdRef="Catch`1_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -244,13 +253,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Handle Business Exception" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_27">
+            <Sequence DisplayName="Handle Business Exception" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Sequence_27">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[exception.Data(&quot;FaultedDetails&quot;) IsNot Nothing AndAlso exception.Data(&quot;FaultedDetails&quot;).GetType().GetProperty(&quot;DisplayName&quot;) IsNot Nothing]" DisplayName="Business Exception Details" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="If_8">
+              <If Condition="[exception.Data(&quot;FaultedDetails&quot;) IsNot Nothing AndAlso exception.Data(&quot;FaultedDetails&quot;).GetType().GetProperty(&quot;DisplayName&quot;) IsNot Nothing]" DisplayName="Business Exception Details" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="If_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>

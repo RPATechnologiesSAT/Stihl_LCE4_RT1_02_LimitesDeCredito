@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,4207</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1260,3858</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DescargaFicheroSP_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -121,7 +121,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DescargaFicheroSP" sap:VirtualizedContainerService.HintSize="1498,3585" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DescargaFicheroSP" sap:VirtualizedContainerService.HintSize="1270,3793" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="LC_FilePath" />
       <Variable x:TypeArguments="si:FileInfo" Name="LC_File" />
@@ -131,27 +131,27 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ES + PT Iberican_FCI - 2. Límites de Crédito - Todos los documentos" sap:VirtualizedContainerService.HintSize="1208,3457" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: ES + PT Iberican_FCI - 2. Límites de Crédito - Todos los documentos" sap:VirtualizedContainerService.HintSize="1208,3600" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1090,3208" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1174,3351" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Selección de la cuenta'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="1056,529" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Selección de la cuenta'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="1112,557" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,308" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ES/FIT-rpa rpa1,'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ES/FIT-rpa rpa1,'" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/702ed1df-fbf3-42e7-a14d-db80a314e632/oauth2/authorize?client_id=00000003-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;resource=00000003-0000-0ff1-ce00-000000000000&amp;scope=openid&amp;nonce=523E7BF62D4DA0505FD688010ECFF6C4F0E427D9C519AA95-B4772DA976FFDAE3CF79B50FE38BD1608E3963CBCEBFCE6F22536EC941B1B4F9&amp;redirect_uri=https%3a%2f%2fstihlgroup.sharepoint.com%2f_forms%2fdefault.aspx&amp;state=OD0w&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;wsucxt=1&amp;cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a&amp;client-request-id=89336aa1-b0cb-a000-96dc-302e2d6030a5&amp;sso_nonce=AwABEgEAAAADAOz_BQD0_7Cz8KYeIy7EXvdkI7d7Yz1tgjJuCKW08vz05_i2NkuadfMV_XzjQz5DHEsdBlIWKGiV0tO0dlnh_oaKSzDp0WQgAA&amp;mscrid=89336aa1-b0cb-a000-96dc-302e2d6030a5" DesignTimeRectangle="852, 405, 280, 32" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='tilesHolder' tag='DIV' aaname='ES/FIT-rpa rpa1, Robotic Process Automation' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='tilesHolder' tag='DIV' aaname='ES/FIT-rpa rpa1, Robotic Process Automation' type='' class='' check:text='ES/FIT-rpa rpa1, Robotic Process Automation' /&gt;" Guid="5f50746c-28bc-441d-9151-a34c88e96852" InformativeScreenshot="b10e1d6622f18d3f3e499bba20e8eee1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Iniciar sesión en la cuenta' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
@@ -181,25 +181,25 @@
                 <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/702ed1df-fbf3-42e7-a14d-db80a314e632/oauth2/authorize?client_id=00000003-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;resource=00000003-0000-0ff1-ce00-000000000000&amp;scope=openid&amp;nonce=523E7BF62D4DA0505FD688010ECFF6C4F0E427D9C519AA95-B4772DA976FFDAE3CF79B50FE38BD1608E3963CBCEBFCE6F22536EC941B1B4F9&amp;redirect_uri=https%3a%2f%2fstihlgroup.sharepoint.com%2f_forms%2fdefault.aspx&amp;state=OD0w&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;wsucxt=1&amp;cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a&amp;client-request-id=89336aa1-b0cb-a000-96dc-302e2d6030a5&amp;sso_nonce=AwABEgEAAAADAOz_BQD0_7Cz8KYeIy7EXvdkI7d7Yz1tgjJuCKW08vz05_i2NkuadfMV_XzjQz5DHEsdBlIWKGiV0tO0dlnh_oaKSzDp0WQgAA&amp;mscrid=89336aa1-b0cb-a000-96dc-302e2d6030a5" CVScreenId="2bc5b41f-0f7d-41a7-9739-cc6dc0b10399" CvTextArea="791, 357, 242, 21" CvTextArgument="Seleccion de la cuenta" CvType="Text" DesignTimeRectangle="792, 353, 352, 28" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' aaname='Selección de la cuenta' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' aaname='Selección de la cuenta' type='' class='' check:text='Selección de la cuenta' /&gt;" Guid="02fc9092-01cc-4e5f-b456-bc195a48eb21" InformativeScreenshot="91a57040453db8cca91d6156bceecc53.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Iniciar sesión en la cuenta' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State '2. Límites'" sap:VirtualizedContainerService.HintSize="1056,2617" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
+            <uix:NCheckState DisplayName="Check App State '2. Límites'" sap:VirtualizedContainerService.HintSize="1112,2704" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="552,2375" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="608,2462" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clientes con'" sap:VirtualizedContainerService.HintSize="518,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clientes con'" sap:VirtualizedContainerService.HintSize="546,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FIBERICAN%5FFCI%2FShared%20Documents%2F1%2E%20Clientes%2F2%2E%20L%C3%ADmites%20de%20Cr%C3%A9dito&amp;viewid=02b47bd7%2D28c3%2D4641%2D8a34%2D91fc6d216305" CVScreenId="3d94ac3d-c818-46cf-9845-5c7a74c0408e" CvTextArea="191, 593, 192, 14" CvTextArgument="[string.Format(&quot;Informe VZ {0}.xlsx&quot;, in_Country)]" CvType="Text" DesignTimeRectangle="192, 512, 117, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='BUTTON' aaname='Informe VZ {0}.xlsx' /&gt;&quot;, in_Country)]" Guid="1cb959a0-89ac-4765-9684-0880c0e56a4e" ImageBase64="" InformativeScreenshot="2be9bc53321281a359cd0cf3a7f7424c.png" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='msedge.exe' htmlwindowname='{{}}' title='{0} + PT Iberican_FCI - 2. Límites de Crédito - Todos los documentos' /&gt;&quot;, in_Country)]" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="518,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="546,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://stihlgroup.sharepoint.com/sites/IBERICAN_FCI/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FIBERICAN%5FFCI%2FShared%20Documents%2F1%2E%20Clientes%2F2%2E%20L%C3%ADmites%20de%20Cr%C3%A9dito&amp;viewid=02b47bd7%2D28c3%2D4641%2D8a34%2D91fc6d216305" CVScreenId="bf06830e-1375-4c52-ad03-273feb26da47" CvTextArea="294, 749, 64, 16" CvTextArgument="Descargar" CvType="Text" DesignTimeRectangle="295, 738, 160, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Descargar' parentname='Descargar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Descargar' type='' parentname='Descargar' tag='SPAN' class='ms-ContextualMenu-itemText label-424' check:innerText='Descargar' /&gt;" Guid="712f4c54-eb10-45b4-8b9d-e20a97c483eb" InformativeScreenshot="eb00d3a3b579b76c802556f945e99e69.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='{}' title='ES + PT Iberican_FCI - 2. Límites de Crédito - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NCheckState DisplayName="Check App State 'Intermediate D3D Window'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="518,513" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State 'Intermediate D3D Window'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="546,543" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V3">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
@@ -210,13 +210,13 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,264" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,294" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,202" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]j[u(ctrl)][u(hk)]" Version="V3" />
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,204" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]j[u(ctrl)][u(hk)]" Version="V3" />
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
@@ -229,12 +229,12 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="518,189" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" Version="V4">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Guardar como'" sap:VirtualizedContainerService.HintSize="546,189" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b722d741-ac07-4359-bab5-f43bca054e6d" Version="V4">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;&lt;ctrl name='Guardar como Más opciones' role='menu button' /&gt;&lt;ctrl name='Guardar como' role='push button' text='Guardar como' /&gt;" Guid="771c1254-92d3-4bd9-afe8-efd536bcd745" SearchSteps="Selector" />
+                      <uix:TargetAnchorable DesignTimeRectangle="109, 77, 116, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Descargas' role='document' /&gt;&lt;ctrl name='Guardar como' role='push button' /&gt;" Guid="771c1254-92d3-4bd9-afe8-efd536bcd745" InformativeScreenshot="8301027bc11335e61c105ab70575023a.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_2' idx='*' /&gt;" SearchSteps="Selector" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="518,84" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                     <ui:CommentOut.Body>
                       <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,465" sap2010:WorkflowViewState.IdRef="Sequence_17">
                         <sap:WorkflowViewStateService.ViewState>
@@ -270,13 +270,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:CommentOut>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="518,1149" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="94825e60-58b0-4bb0-9631-9bf97ddc1ee2" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="546,1205" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="94825e60-58b0-4bb0-9631-9bf97ddc1ee2" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,833" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,889" sap2010:WorkflowViewState.IdRef="Sequence_13">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -287,16 +287,16 @@
                               <uix:TargetAnchorable CVScreenId="ee3ed007-cbc1-4b92-b300-6523612c9652" CvElementArea="135, 385, 809, 24" CvType="InputBox" DesignTimeRectangle="136, 389, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="739279d6-922d-4b77-948d-2b455fdb1849" InformativeScreenshot="e29020c36b5f125a90ac9fce3b92cc17.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Guardar como' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[Environment.CurrentDirectory + &quot;\data\TempExcelExport&quot;]" File="[LC_File]" sap:VirtualizedContainerService.HintSize="450,521" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_4" IgnoreFiles="tpm,dwn,crdownload">
+                          <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[Environment.CurrentDirectory + &quot;\data\TempExcelExport&quot;]" File="[LC_File]" sap:VirtualizedContainerService.HintSize="450,549" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_4" IgnoreFiles="tpm,dwn,crdownload">
                             <ui:GetLastDownloadedFile.Body>
                               <ActivityAction>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94825e60-58b0-4bb0-9631-9bf97ddc1ee2" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94825e60-58b0-4bb0-9631-9bf97ddc1ee2" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable CVScreenId="2c6369a8-2bc9-4e39-a783-6918aeb97261" CvElementArea="747, 489, 88, 27" CvTextArea="769, 495, 44, 12" CvTextArgument="Guardar" CvType="Button" DesignTimeRectangle="747, 489, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Guardar' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Guardar' check:text='unchecked' /&gt;" Guid="1a0dc81a-ba9b-4fef-a7ac-51ea07aaedfb" InformativeScreenshot="ce3a22a48d9a97183565563ffb3258c7.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Guardar como' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
@@ -315,7 +315,7 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
