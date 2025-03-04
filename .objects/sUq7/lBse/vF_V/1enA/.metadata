@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Microsoft Excel (.xlsx)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "1enApmiWAk6xsFldzKSPTQ",
+  "Reference": "TmPdEOoPdEO_2-PlKrUvcg/1enApmiWAk6xsFldzKSPTQ",
+  "ParentRef": "TmPdEOoPdEO_2-PlKrUvcg/vF_VTY59fkayetcD7azaAg",
+  "Created": "2025-03-04T11:18:33.4413854Z",
+  "Updated": "2025-03-04T11:18:33.4413854Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
