@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,5776</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1793,5396</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -125,7 +125,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="952,5711" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="952,5331" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Informes" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_ResponsablesZona" />
@@ -135,7 +135,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="890,5623" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap:VirtualizedContainerService.HintSize="890,5243" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -205,13 +205,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ueab:ExcelProcessScopeX>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_ResponsablesZona]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="828,3987" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_ResponsablesZona]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="828,3607" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="794,3800" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="794,3420" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="email" />
                 <Variable x:TypeArguments="x:String" Name="zona" />
@@ -260,59 +260,48 @@
                   </scg:List>
                 </ui:FilterDataTable.SelectColumns>
               </ui:FilterDataTable>
-              <If Condition="[dt_InformesFiltered.Rows.Count = 0]" sap:VirtualizedContainerService.HintSize="732,3186" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[dt_InformesFiltered.Rows.Count = 0]" sap:VirtualizedContainerService.HintSize="732,2806" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="610,740" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,550" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="548,652" sap2010:WorkflowViewState.IdRef="CommentOut_6">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,550" sap2010:WorkflowViewState.IdRef="Sequence_20">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <umab:OutlookApplicationCard Account="roboticprocessautomation.rpa1@stihl.es" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="450,462" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_2">
-                            <umab:OutlookApplicationCard.Body>
-                              <ActivityAction x:TypeArguments="um:IMailQuickHandle">
-                                <ActivityAction.Argument>
-                                  <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
-                                </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="Sequence_17">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;No existen datos de la zona  &quot; + zona + &quot; . Robot RPA&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,169" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Pedidos bloqueados &quot; + zona]" To="[email]">
-                                    <ui:SendOutlookMail.Files>
-                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                        <InArgument x:TypeArguments="x:String" />
-                                      </scg:List>
-                                    </ui:SendOutlookMail.Files>
-                                  </ui:SendOutlookMail>
-                                </Sequence>
-                              </ActivityAction>
-                            </umab:OutlookApplicationCard.Body>
+                    <umab:OutlookApplicationCard Account="roboticprocessautomation.rpa1@stihl.es" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="450,462" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_4">
+                      <umab:OutlookApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                          </umab:OutlookApplicationCard>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                    </ui:CommentOut>
+                            <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;No existen datos de la zona  &quot; + zona + &quot; . Robot RPA&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,169" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Pedidos bloqueados &quot; + zona]" To="[email]">
+                              <ui:SendOutlookMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                  <InArgument x:TypeArguments="x:String" />
+                                </scg:List>
+                              </ui:SendOutlookMail.Files>
+                            </ui:SendOutlookMail>
+                          </Sequence>
+                        </ActivityAction>
+                      </umab:OutlookApplicationCard.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </umab:OutlookApplicationCard>
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="698,2276" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="698,2086" sap2010:WorkflowViewState.IdRef="Sequence_16">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -407,40 +396,29 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:ExcelProcessScopeX>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="636,652" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,550" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <umab:OutlookApplicationCard Account="roboticprocessautomation.rpa1@stihl.es" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="450,462" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_3">
-                            <umab:OutlookApplicationCard.Body>
-                              <ActivityAction x:TypeArguments="um:IMailQuickHandle">
-                                <ActivityAction.Argument>
-                                  <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
-                                </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="Sequence_18">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Se adjunta fichero Excel con los pedido bloqueados de la &quot; + zona + &quot; Robot RPA&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,169" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Pedidos bloqueados &quot; + zona]" To="[email]">
-                                    <ui:SendOutlookMail.Files>
-                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                        <InArgument x:TypeArguments="x:String">["Data\TempExcelExport\Pedidos Bloqueados " + in_CodPais + " " + zona + " " + now.ToString("dd.MM.yyyy") + ".xlsx"]</InArgument>
-                                      </scg:List>
-                                    </ui:SendOutlookMail.Files>
-                                  </ui:SendOutlookMail>
-                                </Sequence>
-                              </ActivityAction>
-                            </umab:OutlookApplicationCard.Body>
-                          </umab:OutlookApplicationCard>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                    </ui:CommentOut>
+                    <umab:OutlookApplicationCard Account="roboticprocessautomation.rpa1@stihl.es" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="636,462" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_5">
+                      <umab:OutlookApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Se adjunta fichero Excel con los pedido bloqueados de la &quot; + zona + &quot; Robot RPA&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,169" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Pedidos bloqueados &quot; + zona]" To="[email]">
+                              <ui:SendOutlookMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                  <InArgument x:TypeArguments="x:String">["Data\TempExcelExport\Pedidos Bloqueados " + in_CodPais + " " + zona + " " + now.ToString("dd.MM.yyyy") + ".xlsx"]</InArgument>
+                                </scg:List>
+                              </ui:SendOutlookMail.Files>
+                            </ui:SendOutlookMail>
+                          </Sequence>
+                        </ActivityAction>
+                      </umab:OutlookApplicationCard.Body>
+                    </umab:OutlookApplicationCard>
                   </Sequence>
                 </If.Else>
               </If>
